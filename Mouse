@@ -1,0 +1,31 @@
+import java.awt.MouseInfo;
+
+
+public class Mouse {
+
+	private int coordX,coordY,currX,currY;
+	
+	public Mouse(){
+		currX = MouseInfo.getPointerInfo().getLocation().x;
+		currY = MouseInfo.getPointerInfo().getLocation().y;
+		coordX = 0;
+		coordY = 0;
+	}
+	
+	public int getX(){
+		currX = MouseInfo.getPointerInfo().getLocation().x;
+		return currX;
+	}
+	
+	public int getY(){
+		currY = MouseInfo.getPointerInfo().getLocation().y;
+		return currY;
+	}
+	
+	public Point clickdata(){
+		currX = MouseInfo.getPointerInfo().getLocation().x;
+		currY = MouseInfo.getPointerInfo().getLocation().y;
+		Point click = new Point(currX,currY);
+		return click;
+	}
+}
