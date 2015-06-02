@@ -1,0 +1,25 @@
+import java.*;
+import java.awt.MouseInfo;
+import java.awt.GridLayout;
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.event.MouseListener;
+import java.awt.event.MouseEvent;
+
+
+
+public class Test {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int currX,currY,clikX=0,clikY;
+		while (clikX<1000){
+			currX = MouseInfo.getPointerInfo().getLocation().x;
+			currY = MouseInfo.getPointerInfo().getLocation().y;
+			
+		}
+	}
+}
